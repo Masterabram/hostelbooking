@@ -5,7 +5,7 @@
 			<!-- Begin Content -->
 			<div id="content">
 				<div class="post">
-					<h2>Welcome!</h2>
+					<h2>Welcome Here is out brief history!</h2>
 					<img src="images/logo.png" alt="Post Image" height="160" width="260"/>
 					You can be confident when you're Booking your Hostel online with us. Our Secure online hostel booking website ensures that you book your hostel at your perfect spot without having to travel in person. We use industry standard 128-bit encryption. Our website locks all critical information passed from you to us,
                    such as personal information, in an encrypted envelope, making it extremely difficult for this information to be intercepted.. <a href="#" class="more" title="Read More">Read More</a></p>
