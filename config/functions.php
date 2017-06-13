@@ -295,8 +295,8 @@ function view( $user_ip ){
   function send_sms ($no, $msg){ 
     require_once 'AfricasTalkingGateway.php';
     // Specify your login credentials
-   $username   = "Masterabram";
-   $apikey     = "a8b990cdd9e883a81115e91802b7d9db14ece7bd5209ecb4140f4bdc2fed1dad";
+   $username   = "obrien8";
+   $apikey     = "60de8e7f78308fbffab91153c7b906fdae7d7f60671aec739900eaf737674d42";
     
     $recipients = $no;
     // And of course we want our recipients to know what we really do
