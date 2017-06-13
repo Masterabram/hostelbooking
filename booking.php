@@ -51,6 +51,7 @@ if (isset($_POST ['submit'])){
     $msg = 'Please proceed to Mpesa and make a Lipa na Mpesa payment under till number 1234 Please make sure you specificly used this number';
     $tel = $tell;
 
+
     send_email($name, $email, $subject, $msg);
     send_sms ( $tel, $msg);
 

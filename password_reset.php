@@ -26,6 +26,10 @@ if (isset($_POST ['submit'])){
     $subject = 'Password Reset';
     send_email($name, $email, $subject, $msg);
 
+    $tel = $cred['tell'];
+  
+    send_sms ($tel, $msg);
+
     $_SESSION["message"] = "Request Received  check your Mailbox.";
     redirect_to('sign in.php');
   }

@@ -435,19 +435,19 @@ function send_email($name, $email, $subject, $msg){
 				$mail->SMTPAuth   = true;                  
 				$mail->SMTPSecure = "ssl";                 
 				$mail->Host       = "smtp.gmail.com";      
-				$mail->Port       = $rest['smtp'];             
+				$mail->Port       = 445;             
 				$mail->AddAddress($email);
-				$mail->Username   =$rest['username'];  
-				$mail->Password   =$rest['password'];            
-				$mail->SetFrom($rest['username'] , $rest['subject']);
-				$mail->AddReplyTo($rest['username'] , $rest['subject']);
+				$mail->Username   ="hostelsystem17@gmail.com";  
+				$mail->Password   ="qwerty123.";            
+				$mail->SetFrom("hostelsystem17@gmail.com" , "Hostel Booking");
+				$mail->AddReplyTo("hostelsystem17@gmail.com" , "Hostel Booking");
 				$mail->Subject    = $subjectt;
 				$mail->Body 	  = $message;
 				$mail->AltBody    = $message;
 					
 				if($mail->Send())
 				{	
-					$sender = $rest['username'];
+					$sender = "hostelsystem17@gmail.com";
 					$status = 1 ;
 					insert_email($email, $msg, $sender, $status);
 					$_SESSION['message'] = "Email sent successfully";
@@ -455,7 +455,7 @@ function send_email($name, $email, $subject, $msg){
 				}
 				else
 				{
-					$sender = $rest['username'];
+					$sender ="hostelsystem17@gmail.com";
 					$status = 0 ;
 					insert_email($email, $msg, $sender, $status);
 					$_SESSION['message'] = "Email Not Sent";
@@ -463,7 +463,7 @@ function send_email($name, $email, $subject, $msg){
 			}
 			catch(phpmailerException $ex)
 			{	
-				$sender = $rest['username'];
+				$sender ="hostelsystem17@gmail.com";
 				$status = 0 ;
 				insert_email($email, $msg, $sender, $status);
 				$_SESSION['message'] = $ex->errorMessage();
